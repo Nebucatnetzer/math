@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#
+# Todo: n muss noch in Monate umgerechnet werden
 #Kn=Ko*q^n+r*((q^n-1)/(q-1))
 #Kn=80000.-
 #Ko=20000.-
@@ -7,11 +7,11 @@
 #q=1+((z/100)/12)=1+((1.2%/100)/12)=1.001
 #r=250.-
 
-z = 0
-Kn = 0
-Ko = 0
-n = 0
-r = 0
+z = 1 
+Kn = 1
+Ko = 1 
+n = 1
+r = 1
 
 def choose_values():                                                    
     Kn = float(input("Wie gross soll der Endbetrag sein?"))
@@ -24,6 +24,12 @@ def choose_values():
 def main():
     choose_values()
     q = 1+((z/100)/12)
-    Ko*q**n+r*((q**n-1)/(q-1))
+    Kn = (Ko*q**n+r*((q**n-1)/(q-1)))
+    print(Kn)
+    print(Ko)
+    print(n)
+    print()
+    print()
+    print()
 
 if __name__ == "__main__": main()
