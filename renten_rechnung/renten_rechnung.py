@@ -7,6 +7,12 @@
 #q=1+((z/100)/12)=1+((1.2%/100)/12)=1.001
 #r=250.-
 
+z = 0
+Kn = 0
+Ko = 0
+n = 0
+r = 0
+
 def choose_values():                                                    
     Kn = float(input("Wie gross soll der Endbetrag sein?"))
     Ko = float(input("Wie gross ist das Startkapital?"))
