@@ -7,4 +7,17 @@
 #q=1+((z/100)/12)=1+((1.2%/100)/12)=1.001
 #r=250.-
 
-Ko*q**n+r*((q**n-1)/(q-1))
+def choose_values():                                                    
+    Kn = float(input("Wie gross soll der Endbetrag sein?"))
+    Ko = float(input("Wie gross ist das Startkapital?"))
+    n = float(input("Über wieviele Jahre wird einbezahlt?"))
+    z = float(input("Wie hoch ist der Zins?"))
+    r = float(input("Wie hoch ist die monatliche Rate?"))
+
+
+def main():
+    choose_values()
+    q = 1+((z/100)/12)
+    Ko*q**n+r*((q**n-1)/(q-1))
+
+if __name__ == "__main__": main()
