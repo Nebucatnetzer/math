@@ -24,6 +24,7 @@ def choose_values():
 def main():
     choose_values()
     q = 1+((z/100)/12)
-    Ko*q**n+r*((q**n-1)/(q-1))
+    Kn = Ko*q**n+r*((q**n-1)/(q-1))
+    print(Kn)
 
 if __name__ == "__main__": main()
