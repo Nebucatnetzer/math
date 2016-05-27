@@ -19,14 +19,14 @@ def choose_values():
     values_chosen = True
 
 def calculate_compounding_factor():
-    print("Calculating the compounding factor")
+    #print("Calculating the compounding factor")
     values.compounding_factor = 1 + ((values.interest / 100) / 12)
-    print(values.compounding_factor)
+    #print(values.compounding_factor)
 
 def years_to_months():
-    print("Calculating years into months")
+    #print("Calculating years into months")
     values.period_in_months = values.period_in_years * 12
-    print(values.period_in_months)
+    #print(values.period_in_months)
 
 def calculate_pension():
     #print("Calculating Pension")
@@ -38,7 +38,7 @@ def calculate_pension():
 
 def increase_interest():
     #print("Increasing interest")
-    values.interest += 0.0001
+    values.interest += 0.000001
     #print(values.interest)
     
 
@@ -67,7 +67,10 @@ def main():
             calculate_compounding_factor()
             calculate_pension()
         increase_interest()
+        calculate_compounding_factor()
         calculate_pension()
-    print(values.rate)
+    print("Bei einem Zins von ",values.interest," erhalten sie nach ",
+            values.period_in_years," Jahren")
+    print(values.calculated_capital," Franken")
 
 if __name__ == "__main__": main()
