@@ -34,7 +34,7 @@ class Calculation(object):
             input("Wie gross soll der Endbetrag sein? "))
         self.start_capital = float(input("Wie gross ist das Startkapital? "))
         self.period_in_years = float(
-            input("Über wieviele Jahre wird einbezahlt? "))
+            input("Ueber wieviele Jahre wird einbezahlt? "))
         self.rate = float(input("Wie hoch ist die monatliche Rate? "))
         values_chosen = True
 
@@ -68,7 +68,7 @@ class Calculation(object):
 
 
 # initializing the values
-pension = Calculation(interest=0.0001, desired_capital=1, start_capital=0,
+pension = Calculation(interest=0.000001, desired_capital=1, start_capital=0,
                       period_in_years=0, period_in_months=0, rate=0,
                       compounding_factor=0, calculated_capital=0)
 
