@@ -42,13 +42,13 @@ class Calculation(object):
     def calculate_compounding_factor(self):
         # print("Calculating the compounding factor")
         self.compounding_factor = 1 + ((self.interest / 100) / 12)
-        # print(values.compounding_factor)
+        # print(self.compounding_factor)
 
     # convert period_in_years variable into months
     def years_to_months(self):
         # print("Calculating years into months")
         self.period_in_months = self.period_in_years * 12
-        # print(values.period_in_months)
+        # print(self.period_in_months)
 
     # the main pension formula in python
     def calculate_pension(self):
@@ -58,13 +58,13 @@ class Calculation(object):
             * self.compounding_factor ** self.period_in_months + self.rate
             * ((self.compounding_factor ** self.period_in_months - 1)
             / (self.compounding_factor - 1)))
-        # print(values.calculated_capital)
+        # print(self.calculated_capital)
 
     # function to increase the interest by a small amount
     def increase_interest(self):
         # print("Increasing interest")
         self.interest += 0.000001
-        # print(values.interest)
+        # print(self.interest)
 
 
 # initializing the values
