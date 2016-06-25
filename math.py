@@ -1,5 +1,5 @@
-import pension_calculation.pension_calculation
-
+import pension_calculation
+from pension_calculation import pension_calculation
 while True:
     print("What would you like to calculate?")
     print("1: Pension Calculation")
