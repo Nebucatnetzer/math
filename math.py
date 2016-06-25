@@ -1,4 +1,4 @@
-import renten_rechnung.renten_rechnung
+import pension_calculation.pension_calculation
 
 while True:
     print("What would you like to calculate?")

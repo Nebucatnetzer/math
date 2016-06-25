@@ -88,3 +88,5 @@ def calculate_interest():
         pension.calculate_compounding_factor()
         pension.calculate_pension()
     print("Bei einem Zins von ", pension.interest, " erhalten sie nach ",
+          pension.period_in_years, " Jahren")
+    print(pension.calculated_capital, " Franken")
