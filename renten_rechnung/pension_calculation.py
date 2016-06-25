@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # This is the calculation the function is based on.
 # Kn=Ko*q^n+r*((q^n-1)/(q-1))
@@ -67,18 +67,17 @@ class Calculation(object):
         # print(self.interest)
 
 
-# initializing the values
-pension = Calculation(interest=0.000001, desired_capital=1, start_capital=0,
-                      period_in_years=0, period_in_months=0, rate=0,
-                      compounding_factor=0, calculated_capital=0)
-
 
 # Beginning of the main function
 # if the calculated capital is smaller than the desired capital it will
 # increase the interest and try again until the calculated capital is
 # larger than the desired capital then it prints the calculated capital
 # and the interest which reached that capital.n
-def main():
+def calculate_interest():
+    # initializing the values
+    pension = Calculation(interest=0.000001, desired_capital=1, start_capital=0,
+                      period_in_years=0, period_in_months=0, rate=0,
+                      compounding_factor=0, calculated_capital=0)
     while pension.calculated_capital < pension.desired_capital:
         if not values_chosen:
             pension.choose_values()
@@ -89,8 +88,3 @@ def main():
         pension.calculate_compounding_factor()
         pension.calculate_pension()
     print("Bei einem Zins von ", pension.interest, " erhalten sie nach ",
-          pension.period_in_years, " Jahren")
-    print(pension.calculated_capital, " Franken")
-
-
-if __name__ == "__main__": main()
