@@ -2,8 +2,8 @@ import pension_calculation.pension_calculation
 
 while True:
     print("What would you like to calculate?")
-    print("1: Renten Rechnung")
+    print("1: Pension Calculation")
     chosen_calculation = int(input("Choose the desired calculation:"))
     if chosen_calculation == 1:
-            renten_rechnung.main()
+            pension_calculation.calculate_interest()
 print("test")
